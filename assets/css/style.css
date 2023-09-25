@@ -1,39 +1,101 @@
-header {
-    background-image: url(../img/paysage-3d-cailloux-equilibre-dans-ocean.jpg);
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
+    color: #D8E9A8;
+}
+header {
+    position: fixed;
     height: 100vh;
-    width: 100vw;
-}
-.navbar {
-    position: absolute;
+    width: 250px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1e51289e;
+    
 }
-.links ul {
+#container {
+    padding-left: 300px;
+}
+header #title img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+header h1 {
+    font-size: larger;
+}
+#burger {
+    display: none;
+}
+#burger-label {
+    display: none;
+}
+section {
+    min-height: 100vh;
+}
+#links {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
-li {
-    display: inline-block;
-    margin: 20px;
+#links li {
+    list-style-type: none;
+    padding: 10px;
 }
-.menu {
-    position: absolute;
-    width: 50px;
-    display: none;
-    right: 30px;
+#links a {
+    text-decoration: none;
+    color: #D8E9A8;
+    text-transform: uppercase;
 }
-.checkbox,#check {
-    display: none;
+#links a:active {
+    background-color: #1E5128;
+
 }
-@media screen and (max-width:800px) {
-    .links {
+
+#links a:hover {
+    color: #4E9F3D;
+    font-size: 25px;
+
+}
+#title {
+    height: 300px;
+    padding: 10px;
+}
+#copyright {
+    height: 35px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {  
+    #burger-label {
+        display: block;
+        position: absolute;
+    }
+    #burger-label img {
+        width: 30px;
+        height: 30px;
+    }
+    #burger:checked ~ header {
+        display: flex;
+
+    }
+    header {
         display: none;
     }
-    .menu {
-        display: block;
+    copyright {
+        height: 35px;
+        padding: 10px;
     }
-    
 }
