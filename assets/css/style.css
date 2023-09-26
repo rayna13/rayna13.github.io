@@ -17,12 +17,34 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1e51289e;
+    background-color: #1e5128d2;
     
 }
 #container {
     padding-left: 300px;
+    display: block;
 }
+#container {
+    padding-left: 300px;
+    display: block;
+}
+#container {
+    padding-left: 300px;
+    display: block;
+}
+#container {
+    padding-left: 300px;
+    display: block;
+}
+#container {
+    padding-left: 300px;
+    display: block;
+}
+#container {
+    padding-left: 300px;
+    display: block;
+}
+
 header #title img {
     width: 200px;
     height: 200px;
@@ -77,25 +99,67 @@ section {
     height: 35px;
     padding: 10px;
 }
+#container {
+    padding-left: 300px;
+    display: block;
+}
+#hey {
+    display: block;
+    width: 100vh;
+    padding: 300px;
+    font-size: 50px;
+}
+.text1 {
+    color: #18bde7d2;
+    text-align: center;
+    padding: 15px;
+}
+.text2 {
+    text-align: center;
+    padding: 15px;
+}
+.text3 {
+    font-size: 30px;
+    text-align: center;
+    color: #d8e9a890;
+    padding: 15px;
+}
+.text4 {
+    font-size: 15px;
+    color: #ffffff4f;
+    text-align: center;
+}
 
 @media (max-width: 768px) {  
     #burger-label {
         display: block;
-        position: absolute;
+        position: fixed;
+        z-index: 1;
+        left: 0px;
+        transition: left 1s ease;
     }
     #burger-label img {
         width: 30px;
         height: 30px;
     }
     #burger:checked ~ header {
-        display: flex;
+        left: 0px;
 
     }
-    header {
-        display: none;
+    #burger:checked ~ #burger-label {
+        left: 250px;
     }
-    copyright {
+    header {
+        display: flex;
+        left: -250px;
+        transition: left 1s ease; /*ani*/
+    }
+    #copyright {
         height: 35px;
         padding: 10px;
     }
+    #container {
+        padding-left: 50px;
+    }
+
 }
