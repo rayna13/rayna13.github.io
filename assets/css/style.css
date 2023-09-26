@@ -20,31 +20,6 @@ header {
     background-color: #1e5128d2;
     
 }
-#container {
-    padding-left: 300px;
-    display: block;
-}
-#container {
-    padding-left: 300px;
-    display: block;
-}
-#container {
-    padding-left: 300px;
-    display: block;
-}
-#container {
-    padding-left: 300px;
-    display: block;
-}
-#container {
-    padding-left: 300px;
-    display: block;
-}
-#container {
-    padding-left: 300px;
-    display: block;
-}
-
 header #title img {
     width: 200px;
     height: 200px;
@@ -100,34 +75,34 @@ section {
     padding: 10px;
 }
 #container {
-    padding-left: 300px;
     display: block;
+    margin-left: 300px;
 }
 #hey {
-    display: block;
-    width: 100vh;
-    padding: 300px;
-    font-size: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .text1 {
-    color: #18bde7d2;
-    text-align: center;
+    color: #4E9F3D;
     padding: 15px;
+    font-size: 3vw;
 }
 .text2 {
-    text-align: center;
     padding: 15px;
+    font-size: 2vw;
 }
-.text3 {
-    font-size: 30px;
-    text-align: center;
+blockquote {
+    font-size: 1vw;
     color: #d8e9a890;
     padding: 15px;
+    font-style: italic;
 }
 .text4 {
-    font-size: 15px;
+    font-size: 0.8vw;
     color: #ffffff4f;
-    text-align: center;
 }
 
 @media (max-width: 768px) {  
@@ -159,7 +134,10 @@ section {
         padding: 10px;
     }
     #container {
-        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+
     }
 
 }
