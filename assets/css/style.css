@@ -104,6 +104,39 @@ blockquote {
     font-size: 0.8vw;
     color: #ffffff4f;
 }
+#about {
+    display: block;
+}
+h2 {
+    font-size: 3vw;
+}
+.me {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px;
+
+}
+.pic2 {
+    border-color: #4E9F3D;
+    padding: 0px 20px;
+
+}
+p {
+    text-align: justify;
+    font-size: 1.4vw;
+    padding: 20px 0px;
+}
+.btn {
+    background-color: #4E9F3D;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 350px;
+}
+.btn:hover {
+    color: #1E5128;
+}
 
 @media (max-width: 768px) {  
     #burger-label {
@@ -138,6 +171,47 @@ blockquote {
         flex-direction: column;
         margin-left: 0;
 
+    }
+    .text1 {
+        color: #4E9F3D;
+        padding: 15px;
+        font-size: 8vw;
+    }
+    .text2 {
+        padding: 15px;
+        font-size: 6vw;
+    }
+    blockquote {
+        font-size: 4vw;
+        color: #d8e9a890;
+        padding: 15px;
+        font-style: italic;
+    }
+    .text4 {
+        font-size: 3vw;
+        color: #ffffff4f;
+    }
+    .me {
+        display: block;
+        margin: 10px;
+    }
+    .btn {
+        font-size: 16px;
+        margin-left: 110px;
+    }
+    .pic2 {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 6vw;
+        margin-top: 15px;
+    }
+    p {
+        font-size: 4vw;
     }
 
 }
