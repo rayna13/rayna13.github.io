@@ -1,11 +1,24 @@
+* {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: url(../img/galaxy-night-view.jpg) no-repeat center center fixed;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
+    color: #D8E9A8;
+}
+
+a {
     color: #D8E9A8;
 }
 
@@ -16,7 +29,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1e5128d2;
+    background-color: #1a301ed2;
 
 }
 
@@ -126,16 +139,18 @@ blockquote {
     display: block;
 }
 
-h2 {
+section h2 {
     font-size: 3vw;
+    padding-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .me {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 30px;
+    margin-bottom: 60px;
     gap: 20px;
-
 }
 
 .pic2 {
@@ -146,6 +161,7 @@ h2 {
 
 .me p {
     text-align: justify;
+    margin-bottom: 20px;
     font-size: 1rem;
 }
 
@@ -155,11 +171,143 @@ h2 {
     padding: 10px;
     cursor: pointer;
     color: #ffffff;
-    margin-left: 350px;
+    text-decoration: none;
+}
+
+.download-link {
+    text-align: center;
 }
 
 .btn:hover {
     color: #1E5128;
+}
+
+#projects-list {
+    display: flex;
+    gap: 10px;
+}
+
+#projects-list img {
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#projects-list .tooltip {
+    background-color: #0e0f0e;
+    opacity: 0.7;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-body {
+    display: flex;
+    justify-content: start;
+    gap: 3vw;
+}
+
+#formation-body {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Handwriting', sans-serif;;
+    text-align: center;
+}
+
+#contact-form input, #contact-form textarea, #contact-form button {
+    display: block;
+    border: none;
+    height: 50px;
+    margin-top: 1vw;
+    opacity: 0.50;
+    background-color: rgb(220, 224, 212);
+    font-size: 1.1rem;
+}
+
+#personal-info {
+    display: flex;
+    gap: 1vw;
+}
+
+#personal-info input{
+    width: 19.5vw;
+}
+
+#contact-form .fullwidth {
+    width: 40vw;
+}
+
+#contact-form textarea.fullwidth {
+    height: 200px;
+}
+
+#contact-form button.fullwidth {
+    background-color: #191A19;
+    color: #D8E9A8;
+    opacity: 0.90;
+}
+
+#contact-form button.fullwidth:hover {
+    background-color: #0e0f0e;
+}
+
+#additional-info .row  {
+    background-color: #0e0f0e;
+    color: #818a67;
+    padding: 20px;
+    margin-top: 20px;
+    width: 30vw;
+    display: flex;
+    gap: 30px;
+
+}
+
+#additional-info a {
+    color: #D8E9A8;
+    text-decoration: none;
+}
+
+#additional-info a:hover {
+    color: #818a67;
+}
+
+#additional-info img.icon {
+    width: 50px;
+    height: auto;
+}
+
+#additional-info li {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+.social-icons ul {
+    margin-top: 10px;
+}
+
+.social-icons ul li {
+    margin-right: 10px;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+#skills ul li {
+    list-style-type: none;
+}
+
+#skills img {
+    width: 100px;
+}
+
+#skills img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 @media (max-width: 768px) {
@@ -188,8 +336,8 @@ h2 {
     header {
         display: flex;
         left: -250px;
+        /* Animation */
         transition: left 1s ease;
-        /*ani*/
     }
 
     #copyright {

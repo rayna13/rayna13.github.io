@@ -14,16 +14,17 @@
     <header>
         <div id="title">
             <img src="assets/img/francia.jpg" alt="">
-            <p>Francia</p>
+            <p>Marie Ange</p>
             <h1>Développeuse Web</h1>
         </div>
         <nav id="links">
             <ul>
                 <li><a href="#hey">Accueil</a></li>
-                <li><a href="#about">A propos de moi</a></li>
+                <li><a href="#about">A propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div id="copyright">&copy; 2023 Francia</div>
@@ -36,7 +37,7 @@
             <div class="text4">Aristote</div>
         </section>
         <section id="about">
-            <h2>A propos: </h2>
+            <h2>A propos</h2>
             <div class="me">
                 <img src="assets/img/francia.jpg" class="pic2" alt="">
                 <div>
@@ -45,58 +46,98 @@
                     <p>Ce portfolio est le reflet de mon voyage en tant que développeuse web en. Il met en lumière les projets sur lesquels j'ai travaillé jusqu'à présent et témoigne de mon engagement à progresser dans ce domaine. Je suis ouverte à toute opportunité d'apprentissage et de collaboration, alors n'hésitez pas à me contacter pour discuter de la manière dont je peux contribuer à vos projets web.</p>
                 </div>
             </div>
-            <a href="assets/pdf/CV.pdf" download><button type = "button" class="btn"> Télecharger mon cv </button></a>
+            <p class="download-link">
+                <a href="assets/pdf/CV.pdf" download  class="btn" target="_blank">Télécharger mon CV</a> <!-- target _blank permet d'ouvrir le lien dans un nouvel onglet -->
+            </p>
         </section>
         <section id="skills">
             <h2>Mes compétences</h2>
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JAVASCRIPT</li>
-                <li>BOOTSTRAP</li>
+                <li><img src="assets/img/icon/html5.svg" alt="html5" title="html5"></li>
+                <li><img src="assets/img/icon/css3.svg" alt="css3" title="css3"></li>
+                <li><img src="assets/img/icon/javascript.svg" alt="javascript" title="javascript"></li>
+                <li><img src="assets/img/icon/bootstrap.svg" alt="Bootstrap" title="Bootstrap"></li>
+                <li><img src="assets/img/icon/php.svg" alt="php" title="php"></li>
+                <li><img src="assets/img/icon/mysql.svg" alt="mysql" title="mysql"></li>
+                <li><img src="assets/img/icon/wordpress.svg" alt="wordpress" title="wordpress"></li>
             </ul>
-            <ul>
-                <li>PHP</li>
-                <li>MYSQL</li>
-            </ul>
-           
+
 
         </section>
-        <section id="experiences">
-            <h2>Mes éxperiences</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cumque at aliquam corporis, fugit quis eius
-                accusantium? Eligendi vero dicta delectus quod quis reprehenderit, rem doloribus, sed ipsa tenetur
-                corporis?</p>
-        </section>
-        <section id="contacts">
-            <ul>
-                <li>
-                    <a href="#">instagram</a>
-                </li>
-                <li><a href="#">facebook</a>
-                </li>
-                <li> <a href="#">twitter</a>
-                </li>
-            </ul>
-            <form action="/ma-page-de-traitement" method="post">
-                <ul>
-                    <li>
-                        <label for="name">Nom&nbsp;:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </li>
-                    <li>
-                        <label for="mail">E-mail&nbsp;:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </li>
-                    <li>
-                        <label for="msg">Message&nbsp;:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </li>
-                </ul>
-                <div class="button">
-                    <button type="submit">Envoyer le message</button>
+        <section id="projects">
+            <h2>Mes projets</h2>
+            <div id="projects-list">
+                <div class="project">
+                    <img src="assets/img/sophrologie.jpg">
+                    <div class="tooltip">
+                        <p>Cabinet sophrologie Marie Ange</p>
+                        <p><a href="#">Voir le projet</a></p>
+                    </div>
                 </div>
-            </form>
+                <div class="project">
+                    <img src="assets/img/landing.jpg">
+                    <div class="tooltip">
+                        <p>Landing Page Promotion Noel</p>
+                        <p><a href="#">Voir le projet</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/img/blog.jpg">
+                    <div class="tooltip">
+                        <p>Blog de voyage</p>
+                        <p><a href="#">Voir le projet</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="formation">
+            <h2>Formation</h2>
+            <div id="formation-body">
+                <p>Développeur Web et Web Mobile (RNCP 31114, Bac+2).</p>
+                <img src="assets/img/lamanu.svg" alt="La MANU, Ecole supérieure des métiers du numérique">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div id="contact-body">
+                <form action="/ma-page-de-traitement" method="post" id="contact-form">
+                    <div id="personal-info">
+                        <input type="text" name="name" placeholder="Name*" />
+                        <input type="email" name="email" placeholder="Adresse email*" />
+                    </div>
+                    <input type="text" name="subject" placeholder="Sujet" class="fullwidth" />
+                    <textarea name="message" class="fullwidth"></textarea>
+                    <button type="submit" class="fullwidth">Envoyer le message</button>
+                </form>
+                <div id="additional-info">
+                    <div class="row">
+                        <p>
+                            <img src="assets/img/icon/email.png" class="icon">
+                        </p>
+                        <div>
+                            <p>Email</p>
+                            <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#114;&#97;&#110;&#99;&#105;&#97;&#114;&#97;&#107;&#111;&#116;&#111;&#118;&#97;&#104;&#111;&#97;&#107;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#99;&#105;&#97;&#114;&#97;&#107;&#111;&#116;&#111;&#118;&#97;&#104;&#111;&#97;&#107;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <img src="assets/img/icon/social.png" class="icon">
+                        </p>
+                        <div class="social-icons">
+                            <p>Social</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="assets/img/icon/linkedin.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/rayna13" target="_blank"><img src="assets/img/icon/github.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
