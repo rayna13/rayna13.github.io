@@ -1,15 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 html {
     scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 body {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background: url(../img/galaxy-night-view.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #D8E9A8;
 }
+
 header {
     position: fixed;
     height: 100vh;
@@ -18,26 +17,32 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: #1e5128d2;
-    
+
 }
+
 header #title img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: 5px solid #ffffff;
 }
+
 header h1 {
     font-size: larger;
 }
+
 #burger {
     display: none;
 }
+
 #burger-label {
     display: none;
 }
+
 section {
     min-height: 100vh;
 }
+
 #links {
     flex: 1;
     display: flex;
@@ -47,15 +52,18 @@ section {
     text-align: center;
 
 }
+
 #links li {
     list-style-type: none;
     padding: 10px;
 }
+
 #links a {
     text-decoration: none;
     color: #D8E9A8;
     text-transform: uppercase;
 }
+
 #links a:active {
     background-color: #1E5128;
 
@@ -66,18 +74,23 @@ section {
     font-size: 25px;
 
 }
+
 #title {
     height: 300px;
     padding: 10px;
 }
+
 #copyright {
     height: 35px;
     padding: 10px;
 }
+
 #container {
     display: block;
-    margin-left: 300px;
+    margin-left: 275px;
+    padding: 100px;
 }
+
 #hey {
     display: flex;
     text-align: center;
@@ -85,47 +98,57 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .text1 {
     color: #4E9F3D;
     padding: 15px;
     font-size: 3vw;
 }
+
 .text2 {
     padding: 15px;
     font-size: 2vw;
 }
+
 blockquote {
     font-size: 1vw;
     color: #d8e9a890;
     padding: 15px;
     font-style: italic;
 }
+
 .text4 {
     font-size: 0.8vw;
     color: #ffffff4f;
 }
+
 #about {
     display: block;
 }
+
 h2 {
     font-size: 3vw;
 }
+
 .me {
     display: flex;
     flex-direction: row-reverse;
-    margin: 30px;
+    margin-top: 30px;
+    gap: 20px;
 
 }
+
 .pic2 {
     border-color: #4E9F3D;
     padding: 0px 20px;
 
 }
-p {
+
+.me p {
     text-align: justify;
-    font-size: 1.4vw;
-    padding: 20px 0px;
+    font-size: 1rem;
 }
+
 .btn {
     background-color: #4E9F3D;
     font-size: 20px;
@@ -134,11 +157,12 @@ p {
     color: #ffffff;
     margin-left: 350px;
 }
+
 .btn:hover {
     color: #1E5128;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
     #burger-label {
         display: block;
         position: fixed;
@@ -146,72 +170,84 @@ p {
         left: 0px;
         transition: left 1s ease;
     }
+
     #burger-label img {
         width: 30px;
         height: 30px;
     }
-    #burger:checked ~ header {
+
+    #burger:checked~header {
         left: 0px;
 
     }
-    #burger:checked ~ #burger-label {
+
+    #burger:checked~#burger-label {
         left: 250px;
     }
+
     header {
         display: flex;
         left: -250px;
-        transition: left 1s ease; /*ani*/
+        transition: left 1s ease;
+        /*ani*/
     }
+
     #copyright {
         height: 35px;
         padding: 10px;
     }
+
     #container {
         display: flex;
         flex-direction: column;
         margin-left: 0;
+        padding: 20px;
 
     }
+
     .text1 {
         color: #4E9F3D;
         padding: 15px;
         font-size: 8vw;
     }
+
     .text2 {
         padding: 15px;
         font-size: 6vw;
     }
+
     blockquote {
         font-size: 4vw;
         color: #d8e9a890;
         padding: 15px;
         font-style: italic;
     }
+
     .text4 {
         font-size: 3vw;
         color: #ffffff4f;
     }
+
     .me {
         display: block;
-        margin: 10px;
+        text-align: center;
     }
+
     .btn {
         font-size: 16px;
         margin-left: 110px;
     }
+
     .pic2 {
         padding: 0;
-        width: 100%;
+        width: 300px;
         height: auto;
-        border-radius: 50%;
     }
+
     h2 {
         text-align: center;
         font-size: 6vw;
         margin-top: 15px;
-    }
-    p {
-        font-size: 4vw;
     }
 
 }
