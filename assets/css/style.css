@@ -185,10 +185,11 @@ section h2 {
 #projects-list {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 #projects-list img {
-    height: 300px;
+    height: 276px;
     margin-bottom: 10px;
 }
 
