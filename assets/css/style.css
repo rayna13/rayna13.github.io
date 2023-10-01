@@ -199,7 +199,6 @@ section h2 {
     width: 24vw;
     margin-bottom: 10px;
     position: relative;
-    z-index: 1;
 }
 
 .project .tooltip {
@@ -211,7 +210,6 @@ section h2 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     height: 276px;
     width: 24vw;
 }
