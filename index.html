@@ -1,5 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="burger">
+    <label for="burger" id="burger-label"><img src="assets/img/burger.png" alt=""></label>
+    <header>
+        <div id="title">
+            <img src="assets/img/francia.jpg" alt="">
+            <p>Marie Ange</p>
+            <h1>Développeuse Web</h1>
+        </div>
+        <nav id="links">
+            <ul>
+                <li><a href="#hey">Accueil</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="copyright">&copy; 2023 Francia</div>
+    </header>
+    <div id="container">
+        <section id="hey">
+            <div class="text1">Hey! Je suis Marie Ange </div>
+            <div class="text2">Développeuse  Web</div>
+            <blockquote>“Créer, c’est vivre deux fois.”</blockquote>
+            <div class="text4">Aristote</div>
+        </section>
+        <section id="about">
+            <h2>A propos</h2>
+            <div class="me">
+                <img src="assets/img/francia.jpg" class="pic2" alt="">
+                <div>
+                    <p>Je suis Francia, une développeuse web débutante, animée par la passion d'apprendre et de créer. Mon voyage dans le développement web a récemment commencé, mais ma détermination à maîtriser cet art est inébranlable.</p>
+                    <p>Je me lance dans ce domaine avec un enthousiasme sans bornes, cherchant constamment à acquérir de nouvelles compétences et à relever des défis techniques. Bien que je sois encore novice, ma volonté de créer des sites web interactifs et fonctionnels est mon moteur principal.</p>
+                    <p>Ce portfolio est le reflet de mon voyage en tant que développeuse web en. Il met en lumière les projets sur lesquels j'ai travaillé jusqu'à présent et témoigne de mon engagement à progresser dans ce domaine. Je suis ouverte à toute opportunité d'apprentissage et de collaboration, alors n'hésitez pas à me contacter pour discuter de la manière dont je peux contribuer à vos projets web.</p>
+                </div>
+            </div>
+            <p class="download-link">
+                <a href="assets/pdf/CV.pdf" download  class="btn" target="_blank">Télécharger mon CV</a> <!-- target _blank permet d'ouvrir le lien dans un nouvel onglet -->
+            </p>
+        </section>
+        <section id="skills">
+            <h2>Mes compétences</h2>
+            <ul>
+                <li><img src="assets/img/icon/html5.svg" alt="html5" title="html5"></li>
+                <li><img src="assets/img/icon/css3.svg" alt="css3" title="css3"></li>
+                <li><img src="assets/img/icon/javascript.svg" alt="javascript" title="javascript"></li>
+                <li><img src="assets/img/icon/bootstrap.svg" alt="Bootstrap" title="Bootstrap"></li>
+                <li><img src="assets/img/icon/php.svg" alt="php" title="php"></li>
+                <li><img src="assets/img/icon/mysql.svg" alt="mysql" title="mysql"></li>
+                <li><img src="assets/img/icon/wordpress.svg" alt="wordpress" title="wordpress"></li>
+            </ul>
+
+
+        </section>
+        <section id="projects">
+            <h2>Mes projets</h2>
+            <div id="projects-list">
+                <div class="project">
+                    <img src="assets/img/sophrologie.jpg">
+                    <div class="tooltip">
+                        <p>
+                            Cabinet sophrologie Marie Ange<br>
+                            <a href="#">Voir le projet</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/img/landing.jpg">
+                    <div class="tooltip">
+                        <p>
+                            Landing Page Promotion Noel<br>
+                            <a href="#">Voir le projet</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/img/blog.jpg">
+                    <div class="tooltip">
+                        <p>
+                            Blog de voyage<br>
+                            <a href="#">Voir le projet</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="formation">
+            <h2>Formation</h2>
+            <div id="formation-body">
+                <p>Développeur Web et Web Mobile (RNCP 31114, Bac+2).</p>
+                <img src="assets/img/lamanu.svg" alt="La MANU, Ecole supérieure des métiers du numérique">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div id="contact-body">
+                <form action="/ma-page-de-traitement" method="post" id="contact-form">
+                    <div id="personal-info">
+                        <input type="text" name="name" placeholder="Name*" />
+                        <input type="email" name="email" placeholder="Adresse email*" />
+                    </div>
+                    <input type="text" name="subject" placeholder="Sujet" class="fullwidth" />
+                    <textarea name="message" class="fullwidth"></textarea>
+                    <button type="submit" class="fullwidth">Envoyer le message</button>
+                </form>
+                <div id="additional-info">
+                    <div class="row">
+                        <p>
+                            <img src="assets/img/icon/email.png" class="icon">
+                        </p>
+                        <div>
+                            <p>Email</p>
+                            <p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#114;&#97;&#110;&#99;&#105;&#97;&#114;&#97;&#107;&#111;&#116;&#111;&#118;&#97;&#104;&#111;&#97;&#107;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#102;&#114;&#97;&#110;&#99;&#105;&#97;&#114;&#97;&#107;&#111;&#116;&#111;&#118;&#97;&#104;&#111;&#97;&#107;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>
+                            <img src="assets/img/icon/social.png" class="icon">
+                        </p>
+                        <div class="social-icons">
+                            <p>Social</p>
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="assets/img/icon/linkedin.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/rayna13" target="_blank"><img src="assets/img/icon/github.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
