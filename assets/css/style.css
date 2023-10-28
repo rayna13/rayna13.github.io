@@ -359,7 +359,6 @@ section h2 {
 
     #burger-label img {
         width: 30px;
-        height: 30px;
     }
 
     #burger:checked~header {
