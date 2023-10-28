@@ -150,19 +150,6 @@ section h2 {
     gap: 20px;
 }
 
-.pic2 {
-    background: linear-gradient(135deg,#f28907 50%,#e7e5e4 0);
-    border-color: #4E9F3D;
-    background-position-x: right;
-    background-size: 280%;
-    transition: all .7s ease-in-out;
-}
-
-.pic2:hover {
-    background-size: 100%;
-    padding: 5px;
-}
-
 .me p {
     text-align: justify;
     margin-bottom: 20px;
