@@ -75,7 +75,7 @@ section {
 }
 
 #links li:hover, #links li.active {
-    background-color: #0e0f0e;
+    background-color: #0e0f0e79;
 }
 
 #links a {
@@ -112,6 +112,10 @@ section {
     color: #FFFFFF;
     padding: 15px;
     font-size: 3vw;
+}
+
+.text1 span {
+    color: #DC5C7D;
 }
 
 .text2 {
