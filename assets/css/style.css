@@ -341,6 +341,9 @@ section h2 {
         top: 0;
         transition: left 1s ease;
     }
+    #burger-label img {
+        width: 40px;
+    }
 
     #burger:checked~header {
         left: 0px;
