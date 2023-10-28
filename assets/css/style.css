@@ -157,7 +157,7 @@ section h2 {
 }
 
 .btn {
-    background-color: #4E9F3D;
+    background-color: #DC5C7D;
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
@@ -170,7 +170,11 @@ section h2 {
 }
 
 .btn:hover {
-    color: #1E5128;
+    background-color: #a13f58;
+}
+
+.btn:active {
+    background-color: #853148;
 }
 
 #projects-list {
