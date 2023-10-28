@@ -13,13 +13,14 @@ html {
 }
 
 body {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background: url(../img/bg22.jpg) no-repeat center center fixed;
     background-size: cover;
-    color: #D8E9A8;
+    background-color: #2a2b2e;
+    color: #FFFFFF;
 }
 
 a {
-    color: #D8E9A8;
+    color: #FFFFFF;
 }
 
 header {
@@ -29,7 +30,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #1a301ed2;
+    background-color: #232121c3;
 
 }
 
@@ -38,10 +39,15 @@ header #title img {
     height: 200px;
     border-radius: 50%;
     border: 5px solid #ffffff;
+    margin: 40px 0;
+}
+
+header h1, header p {
+    padding-left: 10px;
 }
 
 header h1 {
-    font-size: larger;
+    font-size: 1.2rem;
 }
 
 #burger {
@@ -61,31 +67,21 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-
 }
 
 #links li {
     list-style-type: none;
-    padding: 10px;
+    padding: 12px 20px;
+}
+
+#links li:hover {
+    background-color: #0e0f0e;
 }
 
 #links a {
     text-decoration: none;
-    color: #D8E9A8;
+    color: #FFFFFF;
     text-transform: uppercase;
-}
-
-#links a:active {
-    background-color: #1E5128;
-
-}
-
-#links a:hover {
-    color: #4E9F3D;
-    font-size: 25px;
-
 }
 
 #title {
@@ -113,7 +109,7 @@ section {
 }
 
 .text1 {
-    color: #4E9F3D;
+    color: #FFFFFF;
     padding: 15px;
     font-size: 3vw;
 }
@@ -121,11 +117,12 @@ section {
 .text2 {
     padding: 15px;
     font-size: 2vw;
+    color: #CCCCCC;
 }
 
 blockquote {
     font-size: 1vw;
-    color: #d8e9a890;
+    color: #FFB6C1;
     padding: 15px;
     font-style: italic;
 }
@@ -279,7 +276,7 @@ section h2 {
 
 #contact-form button.fullwidth {
     background-color: #191A19;
-    color: #D8E9A8;
+    color: #FFFFFF;
     opacity: 0.90;
 }
 
@@ -299,7 +296,7 @@ section h2 {
 }
 
 #additional-info a {
-    color: #D8E9A8;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -391,7 +388,7 @@ section h2 {
     }
 
     .text1 {
-        color: #4E9F3D;
+        color: #FFFFFF;
         padding: 15px;
         font-size: 8vw;
     }
@@ -403,7 +400,7 @@ section h2 {
 
     blockquote {
         font-size: 4vw;
-        color: #d8e9a890;
+        color: #FFB6C1;
         padding: 15px;
         font-style: italic;
     }
