@@ -360,6 +360,14 @@ section h2 {
         transition: left 1s ease;
     }
 
+    #hey {
+        height: 100vh;
+    }
+
+    section {
+        min-height: 0;
+    }
+
     #copyright {
         height: 35px;
         padding: 10px;
@@ -416,6 +424,36 @@ section h2 {
         text-align: center;
         font-size: 6vw;
         margin-top: 15px;
+    }
+
+    #projects-list {
+        display: block;
+    }
+
+    .project {
+        width: auto;
+        height: auto;
+    }
+
+    .project img {
+        width: 90vw;
+    }
+
+    .project .tooltip {
+        display: block;
+        background-color: #0e0f0e;
+        opacity: 1;
+        padding: 20px;
+        text-align: center;
+        position: initial;
+        width: 90vw;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .project .tooltip p {
+        position: initial;
+        line-height: 30px;
     }
 
     #contact-body {
