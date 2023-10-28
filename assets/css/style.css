@@ -336,21 +336,16 @@ section h2 {
     #burger-label {
         display: block;
         position: fixed;
-        z-index: 1;
+        z-index: 999;
         left: 0;
         top: 0;
         transition: left 1s ease;
-    }
-
-    #burger-label img {
-        width: 30px;
     }
 
     #burger:checked~header {
         left: 0px;
 
     }
-
     #burger:checked~#burger-label {
         left: 250px;
     }
