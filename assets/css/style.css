@@ -74,7 +74,7 @@ section {
     padding: 12px 20px;
 }
 
-#links li:hover {
+#links li:hover, #links li.active {
     background-color: #0e0f0e;
 }
 
