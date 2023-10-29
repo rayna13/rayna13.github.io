@@ -17,7 +17,7 @@ window.addEventListener("scroll", navHighlighter);
 
 function navHighlighter() {
 
-  let scrollY = window.pageYOffset;
+  let scrollY = window.scrollY;
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
@@ -37,30 +37,26 @@ function navHighlighter() {
 
 /** Home page animation */
 
-
 const textElement = document.querySelector('#typed-text');
-const texts = ["Développeuse Web", "Scroller pour en savoir plus"];
+const texts = ["Développeuse Web", "Scrollez pour en savoir plus"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-let typingSpeed = 100; // Typing speed
-let deletionSpeed = 75; // Faster deletion speed
+let typingSpeed = 100;
+let deletionSpeed = 75;
 
 function typeText() {
   const currentText = texts[textIndex];
   if (isDeleting) {
-    // Remove a character
     textElement.textContent = currentText.substring(0, charIndex - 1);
     charIndex--;
-    typingSpeed = deletionSpeed; // Use deletion speed
+    typingSpeed = deletionSpeed;
   } else {
-    // Add a character
     textElement.textContent = currentText.substring(0, charIndex + 1);
     charIndex++;
-    typingSpeed = 100; // Reset typing speed
+    typingSpeed = 100;
   }
 
-  // Check if the text is fully typed or deleted
   if (!isDeleting && charIndex === currentText.length) {
     isDeleting = true;
   } else if (isDeleting && charIndex === 0) {
@@ -71,5 +67,26 @@ function typeText() {
   setTimeout(typeText, typingSpeed);
 }
 
-// Start the typing effect
 setTimeout(typeText, typingSpeed);
+
+
+/** Section title */
+
+const sectionTags = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          const h2 = entry.target.querySelector('h2');
+          const hr = entry.target.querySelector('hr');
+          const h2Width = h2.getBoundingClientRect().width;
+          hr.style.width = h2Width / 2 + 'px';
+          hr.style.visibility = 'visible';
+      }
+  });
+}, { threshold: 0.5 });
+
+
+sectionTags.forEach(section => {
+  observer.observe(section);
+});

@@ -31,7 +31,8 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: #232121c3;
-
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 header #title img {
@@ -58,9 +59,26 @@ header h1 {
     display: none;
 }
 
-section {
-    min-height: 100vh;
+
+section h2 {
+    font-size: 3vw;
+    padding-top: 10vh;
+    display: inline-block;
 }
+
+section hr {
+    margin-bottom: 10vh;
+}
+
+
+hr {
+    visibility: hidden;
+    border: none;
+    border-top: 7px solid #DC5C7D;
+    width: 0;
+    transition: width 0.5s ease;
+}
+
 
 #links {
     flex: 1;
@@ -74,7 +92,11 @@ section {
     padding: 12px 20px;
 }
 
-#links li:hover, #links li.active {
+#links li:hover {
+    background-color: #0e0f0e3d;
+}
+
+#links li.active {
     background-color: #0e0f0e79;
 }
 
@@ -106,6 +128,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .text1 {
@@ -114,7 +137,7 @@ section {
     font-size: 3vw;
 }
 
-.text1 span {
+.text1 span, #title p {
     color: #DC5C7D;
 }
 
@@ -140,12 +163,6 @@ blockquote {
     display: block;
 }
 
-section h2 {
-    font-size: 3vw;
-    padding-top: 10vh;
-    margin-bottom: 10vh;
-}
-
 .me {
     display: flex;
     flex-direction: row-reverse;
@@ -167,10 +184,6 @@ section h2 {
     cursor: pointer;
     color: #ffffff;
     text-decoration: none;
-}
-
-.download-link {
-    text-align: center;
 }
 
 .btn:hover {
@@ -231,6 +244,10 @@ section h2 {
     display: flex;
     justify-content: start;
     gap: 3vw;
+}
+
+#formation {
+    min-height: 50vh;
 }
 
 #formation-body {
@@ -427,9 +444,9 @@ section h2 {
         height: auto;
     }
 
-    h2 {
+    section h2 {
         text-align: center;
-        font-size: 6vw;
+        font-size: 10vw;
         margin-top: 15px;
     }
 
