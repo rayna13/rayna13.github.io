@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: url(../img/bg22.jpg) no-repeat center center fixed;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: #2a2b2e;
     color: #FFFFFF;
@@ -202,7 +202,7 @@ blockquote {
 }
 
 .project {
-    height: 276px;
+    height: 270px;
     width: 23vw;
     overflow: hidden;
     position: relative;
@@ -223,7 +223,7 @@ blockquote {
     position: absolute;
     top: 0;
     left: 0;
-    height: 276px;
+    height: 270px;
     width: 24vw;
 }
 
@@ -276,6 +276,10 @@ blockquote {
 
 #personal-info input{
     width: 19.5vw;
+}
+
+#contact {
+    min-height: 90vh;
 }
 
 
