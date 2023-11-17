@@ -303,7 +303,7 @@ blockquote {
 
 #additional-info .row  {
     background-color: #0e0f0e;
-    color: #818a67;
+    color: #DC5C7D;
     padding: 20px;
     margin-top: 20px;
     width: 30vw;
@@ -318,7 +318,7 @@ blockquote {
 }
 
 #additional-info a:hover {
-    color: #818a67;
+    font-weight: bold;
 }
 
 #additional-info img.icon {
